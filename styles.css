@@ -1,0 +1,356 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#dfe9f5;
+font-family:Arial, Helvetica, sans-serif;
+display:flex;
+justify-content:center;
+min-height:100vh;
+padding:20px;
+}
+
+.hidden{
+display:none;
+}
+
+.app{
+width:659px;
+max-width:95vw;
+background:white;
+border-radius:40px;
+padding:25px;
+box-shadow:
+0 10px 25px rgba(0,0,0,0.15);
+margin-bottom:90px;
+}
+
+
+.header{
+margin-bottom:25px;
+}
+
+.header h1{
+font-size:42px;
+margin-bottom:5px;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+
+.subtitle{
+color:gray;
+}
+
+
+/* BOAT CARDS */
+
+.boat-card{
+border-radius:25px;
+padding:20px;
+margin-bottom:20px;
+color:white;
+}
+
+.boat-card h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.boat-card p{
+margin-bottom:10px;
+}
+
+.boat-card label{
+display:block;
+margin-bottom:5px;
+}
+
+.hours-input{
+width:100%;
+border:none;
+border-radius:10px;
+padding:10px;
+margin-bottom:10px;
+}
+
+.boat-card button{
+width:100%;
+border:none;
+padding:12px;
+border-radius:12px;
+background:white;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.boat-card button.saved{
+background:#7bd389;
+color:white;
+}
+
+.price-preview{
+font-weight:bold;
+}
+
+/* COLORS */
+
+.pink{
+background:#f5a5d7;
+}
+
+.blue{
+background:#79d7ea;
+}
+
+.orange{
+background:#ffb85c;
+}
+
+.green{
+background:#8bd79c;
+}
+
+.purple{
+background:#ab8eff;
+}
+
+/* BOOKINGS */
+
+#booking-list{
+list-style:none;
+}
+
+.booking-item{
+background:#f5f5f5;
+padding:15px;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.booking-item p{
+margin-top:5px;
+}
+
+.delete-btn{
+margin-top:10px;
+width:100%;
+border:none;
+padding:10px;
+border-radius:10px;
+background:#ff6464;
+color:white;
+cursor:pointer;
+}
+
+#toast{
+position:fixed;
+top:20px;
+right:20px;
+background:#ff6b6b;
+color:white;
+padding:15px 20px;
+border-radius:10px;
+font-weight:bold;
+opacity:0;
+pointer-events:none;
+transition:0.3s;
+}
+
+#toast.show{
+    opacity:1;
+}
+
+/* WEATHER */
+
+#weather-text{
+font-size:22px;
+background:#f5f5f5;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+/* BOTTOM NAV */
+
+.bottom-nav{
+position:fixed;
+bottom:20px;
+width:350px;
+height:65px;
+background:white;
+border-radius:25px;
+display:flex;
+justify-content:space-around;
+align-items:center;
+box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.bottom-nav button{
+border:none;
+background:none;
+font-size:28px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.bottom-nav button:hover{
+transform:scale(1.15);
+}
+
+
+/* BOAT CARDS */
+#boat-list{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+align-items:start;
+}
+
+.boat-card{
+border-radius:25px;
+padding: 15px;
+margin-bottom:15px;
+color:white;
+}
+
+.boat-card h3{
+font-size:24px;
+}
+.boat-card{
+padding:15px;
+}
+
+.boat-card p{
+margin-bottom:10px;
+}
+
+.boat-card label{
+display:block;
+margin-bottom:5px;
+}
+
+.customer-input,
+.hours-input{
+width:100%;
+height:45px;
+padding:12px;
+border:none;
+border-radius:12px;
+margin-bottom:10px;
+font-size:16px;
+}
+
+.boat-card button{
+width:100%;
+border:none;
+padding:12px;
+border-radius:12px;
+background:white;
+cursor:pointer;
+font-weight:bold;
+
+}
+
+.boat-card button:hover{
+background:#e8e8e8;
+transform:translateY(-2px);
+}
+
+.price-preview{
+font-weight:bold;
+}
+
+/* COLORS */
+
+.pink{
+background:#f5a5d7;
+}
+
+.blue{
+background:#79d7ea;
+}
+
+.orange{
+background:#ffb85c;
+}
+
+.green{
+background:#8bd79c;
+}
+
+.purple{
+background:#ab8eff;
+}
+
+/* BOOKINGS */
+
+#booking-list{
+list-style:none;
+}
+
+.booking-item{
+background:#f5f5f5;
+padding:15px;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.booking-item p{
+margin-top:5px;
+}
+
+.delete-btn{
+margin-top:10px;
+width:100%;
+border:none;
+padding:10px;
+border-radius:10px;
+background:#ff6464;
+color:white;
+cursor:pointer;
+}
+
+/* WEATHER */
+
+#weather-text{
+font-size:22px;
+background:#f5f5f5;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+/* BOTTOM NAV */
+
+.bottom-nav{
+position:fixed;
+bottom:20px;
+width:350px;
+height:65px;
+background:white;
+border-radius:25px;
+display:flex;
+justify-content:space-around;
+align-items:center;
+box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.bottom-nav button{
+border:none;
+background:none;
+font-size:28px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.bottom-nav button:hover{
+transform:scale(1.15);
+}
+
